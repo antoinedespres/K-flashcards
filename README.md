@@ -5,17 +5,17 @@ Downloads card packs from a remote server (my website).
 
 ## Screenshots
 
-Cards do not show the answer until they are tapped.
-![Cards do not show the answer until they are tapped](app_screenshots/card_no_answer.PNG)
+Cards do not show the answer until they are tapped.  
+<img src="app_screenshots/card_no_answer.PNG" alt="Cards do not show the answer until they are tapped" width="300"/>
 
-Once a card is tapped, it toggles the isShowingAnswer boolean
-![Once a card is tapped, it toggles the isShowingAnswer boolean](app_screenshots/card_tapped_show_answer.PNG)
+Once a card is tapped, it toggles the isShowingAnswer boolean.  
+<img src="app_screenshots/card_tapped_show_answer.PNG" alt="Card tapped shows answer" width="300"/>
 
-Swipe right if you know the word
-![Swipe right if you know the word](app_screenshots/swipe_right_green.PNG)
+Swipe right if you know the word.  
+<img src="app_screenshots/swipe_right_green.PNG" alt="Swipe right if you know the word" width="300"/>
 
-Swipe left if you don't know the word
-![Swipe left if you don't know the word](app_screenshots/swipe_left_red.PNG)
+Swipe left if you don't know the word.  
+<img src="app_screenshots/swipe_left_red.PNG" alt="Swipe left if you don't know the word" width="300"/>
 
-Load card packs from my server
-![Load card packs from my server](app_screenshots/loard_card_pack_remote.PNG)
+Load card packs from my server.  
+<img src="app_screenshots/loard_card_pack_remote.PNG" alt="Load card packs from remote" width="300"/>
