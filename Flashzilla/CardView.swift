@@ -74,7 +74,9 @@ struct CardView: View {
                 }
         )
         .onTapGesture {
-            isShowingAnswer.toggle()
+            withAnimation(.easeInOut) {
+                isShowingAnswer.toggle()
+            }
         }
         .animation(.bouncy, value: offset)
     }

@@ -138,9 +138,35 @@ struct ContentView: View {
                 isActive = false
             }
         }
-        .sheet(isPresented: $showingEditScreen, onDismiss: resetCards, content: EditCards.init)
+        .sheet(isPresented: $showingEditScreen) {
+            JsonFilePickerView { selectedFilename in
+                if let filename = selectedFilename {
+                    loadRemoteCards(from: filename)
+                }
+            }
+        }
         .onAppear(perform: resetCards)
     }
+    
+    func loadRemoteCards(from filename: String) {
+        print("ran in content view")
+        let url = Constants.remoteServerURL.appendingPathComponent(filename)
+        
+        URLSession.shared.dataTask(with: url) { data, _, _ in
+            if let data = data {
+                if let decoded = try? JSONDecoder().decode([Card].self, from: data) {
+                    DispatchQueue.main.async {
+                        self.cards = decoded
+                        if let encoded = try? JSONEncoder().encode(decoded) {
+                            UserDefaults.standard.set(encoded, forKey: "Cards")
+                        }
+                        resetCards()
+                    }
+                }
+            }
+        }.resume()
+    }
+    
     
     func removeCard(at index: Int) {
         guard index >= 0 else { return }
@@ -172,6 +198,7 @@ struct ContentView: View {
         return hour
     }
     
+    // App background
     func gradientColors(for hour: Double) -> [Color] {
         switch hour {
         case 0..<6:

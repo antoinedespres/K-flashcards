@@ -6,7 +6,12 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		FF1B87C22E446D3400EFCA37 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = FF1B87C12E446D3000EFCA37 /* README.md */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
+		FF1B87C12E446D3000EFCA37 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		FF3766C02E01016500552C27 /* Flashzilla.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flashzilla.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -32,6 +37,7 @@
 		FF3766B72E01016500552C27 = {
 			isa = PBXGroup;
 			children = (
+				FF1B87C12E446D3000EFCA37 /* README.md */,
 				FF3766C22E01016500552C27 /* Flashzilla */,
 				FF3766C12E01016500552C27 /* Products */,
 			);
@@ -119,6 +125,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF1B87C22E446D3400EFCA37 /* README.md in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
