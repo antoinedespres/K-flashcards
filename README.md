@@ -1,7 +1,7 @@
-# Flashzilla
+# K-flashcards
 
 Simple flashcards app based on "Hacking with SwiftUI" course by Paul Hudson.  
-Downloads card packs from a remote server (my website).
+Downloads Korean card packs from a remote server (currently: my website).
 
 ## Screenshots
 
